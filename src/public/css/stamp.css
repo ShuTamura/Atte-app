@@ -1,0 +1,42 @@
+.stamp {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0 50px 0;
+}
+.stamp__title {
+    text-align: center;
+    font-size: 18px;
+}
+.stamp__form-outer {
+    margin: 30px auto 0;
+}
+.stamp__form-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.stamp__form-table td {
+    width: 30%;
+    background-clip: padding-box;
+    border: 15px solid transparent;
+    display: inline-block;
+    margin: 0;
+}
+.btn {
+    width: 100%;
+    padding: 50px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+.stamp__btn-clock-in--prevention,
+.stamp__btn-clock-out--prevention,
+.stamp__btn-break-start--prevention,
+.stamp__btn-break-end--prevention {
+    opacity: 0.7;
+    color: #e5e5e5;
+    pointer-events: none;
+}

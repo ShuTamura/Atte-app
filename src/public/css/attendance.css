@@ -1,0 +1,109 @@
+/* .attendance {
+    text-align: center;
+} */
+
+.attendance__table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    max-width: 1656px;
+}
+.attendance__table tr {
+    border-top: 1px solid #000;
+    display: block;
+    padding: 10px;
+}
+.attendance__table th {
+    width: 130px;
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+}
+.attendance__table th:not(:first-child) {
+    margin-left: 10px;
+}
+.attendance__table td {
+    width: 130px;
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+}
+.attendance__table td:not(:first-child) {
+    margin-left: 10px;
+}
+
+.attendance__search-by-name {
+    padding-top: 20px;
+}
+.name-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-form__item {
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 3px;
+}
+.name-form__search-btn {
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    background-color: #214BE0;
+    cursor: pointer;
+}
+
+.attendance__search-by-date {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.target-day {
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.date-selection__btn--ago ,
+.date-selection__btn--later {
+    width: 40px;
+    font-weight: solid;
+    font-size: 20px;
+    color: #214BE0;
+    border:1px solid #214BE0;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .attendance__table th {
+        width: 70px;
+        font-size: 14px;
+    }
+    .attendance__table th:not(:first-child) {
+        margin-left: 20px;
+    }
+    .attendance__table td {
+        width: 70px;
+        font-size: 14px;
+    }
+    .attendance__table td:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .attendance__table th {
+        width: 60px;
+        font-size: 12px;
+    }
+    .attendance__table th:not(:first-child) {
+        margin-left: 5px;
+    }
+    .attendance__table td {
+        width: 60px;
+        font-size: 12px;
+    }
+    .attendance__table td:not(:first-child) {
+        margin-left: 5px;
+    }
+}

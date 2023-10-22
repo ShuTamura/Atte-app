@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\WorkHour;
+use App\Models\BreakTime;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,5 +17,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        // WorkHour::factory(100)->create();
+        $this->call(BreakTimesTableSeeder::class);
     }
 }

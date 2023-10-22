@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+
+.header__inner {
+    max-width: 1656px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.header__title {
+    font-size: 26px;
+}
+.title {
+    text-decoration: none;
+    color: inherit;
+}
+.header__nav-list {
+    display: flex;
+    font-size: 14px;
+}
+.header__nav-item {
+    list-style: none;
+}
+.header__nav-item:not(:last-child) {
+    margin-right: 30px;
+}
+.header__nav-item a {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+.logout-btn {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+main {
+    background-color: #f2f2f2;
+}
+
+footer {
+    text-align: center;
+}
+.footer__small {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.search-by-name {
+    padding-top: 20px;
+}
+.name-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-form__item {
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 3px;
+}
+.name-form__search-btn {
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    background-color: #214BE0;
+    cursor: pointer;
+}
+
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    max-width: 1656px;
+}
+.table tr {
+    border-top: 1px solid #000;
+    display: block;
+    padding: 10px;
+}
+.table th {
+    width: 130px;
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+}
+.table th:not(:first-child) {
+    margin-left: 10px;
+}
+.table td {
+    width: 130px;
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+}
+.table td:not(:first-child) {
+    margin-left: 10px;
+}
+
+.error-message {
+    color: #ff0000;
+}
+
+svg.w-5.h-5 {
+    /*paginateメソッドの矢印の大きさ調整のために追加*/
+    width: 30px;
+    height: 30px;
+}

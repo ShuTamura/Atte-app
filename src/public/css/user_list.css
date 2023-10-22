@@ -1,0 +1,8 @@
+.jump-form__btn {
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+    border-color: #000;
+    background-color: #6d6d6d;
+    cursor: pointer;
+}

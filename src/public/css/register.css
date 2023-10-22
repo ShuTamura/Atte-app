@@ -1,0 +1,50 @@
+.register__content {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.register__title {
+    font-size: 20px;
+}
+
+.register__item {
+    width: 300px;
+    font-size: 12px;
+    margin: 20px auto;
+    padding: 10px 10px;
+    display: block;
+    border: 1px solid #909090;
+    border-radius: 3px;
+    outline: none;
+    background: none;
+}
+
+.register__button {
+    width: 300px;
+    font-size: 12px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background-color: #214BE0;
+}
+
+.login {
+    margin: 20px auto;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.login__guide {
+    margin-bottom: 0;
+    color: #909090;
+}
+
+.login__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #214BE0;
+}
