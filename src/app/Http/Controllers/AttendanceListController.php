@@ -33,7 +33,6 @@ class AttendanceListController extends Controller
                 $work->update([
                 'total_break' => $total_break
                 ]);
-                echo "\n";
             }
             $today = Carbon::today();
             $target_day = $today->format('Y-m-d');

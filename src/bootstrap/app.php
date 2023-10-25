@@ -14,7 +14,19 @@
 $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
+/*
+switch ($_SERVER['HTTP_HOST'] ?? 'localhost') {
+    // 開発環境
+    case 'localhost':
+        $app->loadEnvironmentFrom('.env.dev');
+        break;
 
+    // 本番環境
+    case 'ip-192-168-3-14.ap-northeast-1.compute.internal':
+        $app->loadEnvironmentFrom('.env.prod');
+        break;
+}
+*/
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces
