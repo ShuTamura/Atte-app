@@ -1,4 +1,2 @@
 docker/mysql/data/*
 !.gitkeep
-
-src/.env.prod

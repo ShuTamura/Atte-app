@@ -10,4 +10,8 @@ RUN curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer \
   && composer self-update
 
+RUN php artisan config:clear
+RUN php artisan config:cache
+RUN php artisan optimize
+
 WORKDIR /var/www
