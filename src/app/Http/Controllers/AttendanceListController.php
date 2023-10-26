@@ -60,7 +60,7 @@ class AttendanceListController extends Controller
 
     public function search(Request $request) {
         $target_day = new Carbon($request->target_day);
-        // $work_hours = WorkHour::with('user')->NameSearch($request->name_word)->whereDate('clock_in', $target_day)->Paginate(5);
+        $target_day = $target_day->format('Y-m-d');
         $keyword = $request->name_word;
         $work_hours = WorkHour::whereHas('user', function ($q) use ($keyword){
             $q->where('name', 'like', '%' . $keyword . '%');

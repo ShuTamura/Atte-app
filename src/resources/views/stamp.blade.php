@@ -16,7 +16,7 @@
             </div>
             @endif
             @if (session('error'))
-            <div class="message">
+            <div class="error-message">
                 {{session('error')}}
             </div>
             @endif
@@ -57,7 +57,7 @@
                         @endif
                     </tr>
                     <tr>
-                        @if(!empty($today['start']))
+                        @if(!empty(session('start')))
                         <td>
                             <form action="/breakstart" class="form" method="POST">
                                 @csrf
@@ -68,11 +68,11 @@
                         <td>
                             <form action="/breakstart" class="form" method="POST">
                                 @csrf
-                                <button class="btn stamp__btn-break-start--active" type="submit">休憩開始</button>
+                                <button class="btn stamp__btn-break-start--active" type="submit" name="start" value="1">休憩開始</button>
                             </form>
                         </td>
                         @endif
-                        @if(!empty($today['end']))
+                        @if(!empty(session('end')))
                         <td>
                             <form action="/breakend" class="form" method="POST">
                                 @csrf
@@ -83,7 +83,7 @@
                         <td>
                             <form action="/breakend" class="form" method="POST">
                                 @csrf
-                                <button class="btn stamp__btn-break-end--active" type="submit">休憩終了</button>
+                                <button class="btn stamp__btn-break-end--active" type="submit" name="end" value="1">休憩終了</button>
                             </form>
                         </td>
                         @endif
