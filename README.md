@@ -74,7 +74,7 @@ $ docker-compose up -d --build
 laravelのパッケージインストール
 ```
 $ docker-compose exec php bash //phpコンテナにログイン
-$ composer install
+$ cp .env.example .env
 ```
 .envファイルの編集
 ```
@@ -86,9 +86,10 @@ DB_PORT=3306
 - DB_DATABASE=laravel
 - DB_USERNAME=root
 - DB_PASSWORD=
-+ DB_DATABASE="データベース名"          //
-+ DB_USERNAME="データベースユーザー名"   //docker-compose.ymlのmysqlをもとに編集
-+ DB_PASSWORD="データベースパスワード"   //
+// docker-compose.ymlのmysqlをもとに編集
++ DB_DATABASE="データベース名"          // MYSQL_DATABASE: "データベース名"
++ DB_USERNAME="データベースユーザー名"   // MYSQL_USER: "データベースユーザー名"
++ DB_PASSWORD="データベースパスワード"   // MYSQL_PASSWORD: "データベースパスワード"
 ```
 開発環境ではメール認証を確認するためにmailhogを設定。
 ```
